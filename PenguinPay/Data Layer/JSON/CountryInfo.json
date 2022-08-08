@@ -1,0 +1,33 @@
+[
+    {
+        "country" : "Kenya",
+        "phone_prefix" : "+254",
+        "currency_abbreviation" : "KES",
+        "regex" : "254\\d{9}$",
+        "image": "Kenya"
+    }
+    ,
+    {
+        "country" : "Nigeria",
+        "phone_prefix" : "+234",
+        "currency_abbreviation" : "NGN",
+        "regex" : "234\\d{7}$",
+        "image": "Nigeria"
+    }
+    ,
+    {
+        "country" : "Tanzania",
+        "phone_prefix" : "+255",
+        "currency_abbreviation" : "TZS",
+        "regex" : "255\\d{9}$",
+        "image": "Tanzania"
+    }
+    ,
+    {
+        "country" : "Uganda",
+        "phone_prefix" : "+256",
+        "currency_abbreviation" : "UGX",
+        "regex" : "256\\d{7}$",
+        "image": "Uganda"
+    }
+]

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SendMoneyView" customModule="PenguinPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="491" height="1000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipent's Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y5-Dq-zyv">
+                    <rect key="frame" x="16" y="16" width="186" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="SecondaryColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5Fk-HX-msG">
+                    <rect key="frame" x="8" y="60" width="475" height="216"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kcp-dH-13k">
+                            <rect key="frame" x="0.0" y="0.0" width="475" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="I5S-jJ-i9y"/>
+                            </constraints>
+                            <color key="textColor" name="SecondaryColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-GI-VI7">
+                            <rect key="frame" x="0.0" y="57" width="475" height="45"/>
+                            <color key="textColor" name="SecondaryColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Receipent's Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n1E-mP-y8B">
+                            <rect key="frame" x="0.0" y="114" width="475" height="45"/>
+                            <color key="textColor" name="SecondaryColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Fgh-ev-HBo">
+                            <rect key="frame" x="0.0" y="171" width="475" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yki-tG-e9N">
+                                    <rect key="frame" x="0.0" y="0.0" width="20" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Receipent's Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGZ-oS-3hj">
+                                    <rect key="frame" x="20" y="0.0" width="455" height="45"/>
+                                    <color key="textColor" name="SecondaryColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer Amount Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnU-iP-gON">
+                    <rect key="frame" x="16" y="308" width="224.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <color key="textColor" name="SecondaryColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="tcl-gu-Trq">
+                    <rect key="frame" x="8" y="351" width="475" height="102"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="You Send" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opz-FO-IpE">
+                            <rect key="frame" x="0.0" y="0.0" width="475" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="w5f-U4-EcQ"/>
+                            </constraints>
+                            <color key="textColor" name="SecondaryColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="They Receive" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nci-Xe-Vet">
+                            <rect key="frame" x="0.0" y="57" width="475" height="45"/>
+                            <color key="textColor" name="SecondaryColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver will receive a total of " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Jo-Ep-Uw4">
+                    <rect key="frame" x="16" y="469" width="459" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="SecondaryColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8Jo-Ep-Uw4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="0QW-Ar-BCB"/>
+                <constraint firstItem="tcl-gu-Trq" firstAttribute="leading" secondItem="5Fk-HX-msG" secondAttribute="leading" id="Bdm-jk-reF"/>
+                <constraint firstItem="6Y5-Dq-zyv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Bse-6Q-K5c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Fk-HX-msG" secondAttribute="trailing" constant="8" id="D9s-QQ-xZZ"/>
+                <constraint firstItem="6Y5-Dq-zyv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="F4Y-Lk-elT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Jo-Ep-Uw4" secondAttribute="trailing" constant="16" id="Jcf-F5-ySb"/>
+                <constraint firstItem="BnU-iP-gON" firstAttribute="top" secondItem="5Fk-HX-msG" secondAttribute="bottom" constant="32" id="Jem-xI-Xxa"/>
+                <constraint firstItem="5Fk-HX-msG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="KkE-0e-pDG"/>
+                <constraint firstItem="BnU-iP-gON" firstAttribute="leading" secondItem="6Y5-Dq-zyv" secondAttribute="leading" id="Tc4-7Z-YjS"/>
+                <constraint firstItem="8Jo-Ep-Uw4" firstAttribute="top" secondItem="tcl-gu-Trq" secondAttribute="bottom" constant="16" id="Vv1-00-OtW"/>
+                <constraint firstItem="tcl-gu-Trq" firstAttribute="trailing" secondItem="5Fk-HX-msG" secondAttribute="trailing" id="ave-IT-Psx"/>
+                <constraint firstItem="tcl-gu-Trq" firstAttribute="top" secondItem="BnU-iP-gON" secondAttribute="bottom" constant="22.5" id="cDn-C0-dsg"/>
+                <constraint firstItem="5Fk-HX-msG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="epw-n8-h7Z"/>
+                <constraint firstItem="5Fk-HX-msG" firstAttribute="top" secondItem="6Y5-Dq-zyv" secondAttribute="bottom" constant="23.5" id="rfx-dh-NFw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Fk-HX-msG" secondAttribute="trailing" constant="8" id="tC1-c0-7jS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Jo-Ep-Uw4" secondAttribute="bottom" constant="8" id="uDv-bb-4IN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countryCodeLabel" destination="Yki-tG-e9N" id="Xp4-Ly-mlr"/>
+                <outlet property="firstNameTextField" destination="Kcp-dH-13k" id="12o-mp-uxn"/>
+                <outlet property="lastNameTextField" destination="cIU-GI-VI7" id="Ffs-zD-odY"/>
+                <outlet property="moneyReceiveLabel" destination="8Jo-Ep-Uw4" id="DQM-vv-mGy"/>
+                <outlet property="moneyReceiveTextField" destination="Nci-Xe-Vet" id="Php-KM-daD"/>
+                <outlet property="phoneStackView" destination="Fgh-ev-HBo" id="u94-m2-cbF"/>
+                <outlet property="receipentCountryTextField" destination="n1E-mP-y8B" id="g2A-Ps-2u1"/>
+                <outlet property="receipentPhoneNumberTextField" destination="dGZ-oS-3hj" id="dNf-yJ-0SN"/>
+                <outlet property="sendMoneyTextField" destination="Opz-FO-IpE" id="EZg-dq-bFN"/>
+            </connections>
+            <point key="canvasLocation" x="363" y="14"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="SecondaryColor">
+            <color red="0.17647058823529413" green="0.17647058823529413" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

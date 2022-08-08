@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0FC6C175-1845-4910-B065-FA1A32256509"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BBDD6377-1339-46C8-AB2D-DECDBC6A7989"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenguinPayTests/PenguinPayTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "testCurrencyCalculation()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BBDD6377-1339-46C8-AB2D-DECDBC6A7989 - ac943318f1757d41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenguinPayTests.PenguinPayTests.testCurrencyCalculation() -&gt; ()"
+                  moduleName = "PenguinPayTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheearzahmed/Desktop/PenguinPay/PenguinPayTests/PenguinPayTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "845">
+               </Location>
+               <Location
+                  uuid = "BBDD6377-1339-46C8-AB2D-DECDBC6A7989 - ac943318f1757d41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenguinPayTests.PenguinPayTests.testCurrencyCalculation() -&gt; ()"
+                  moduleName = "PenguinPayTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheearzahmed/Desktop/PenguinPay/PenguinPayTests/PenguinPayTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "975">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "564CEB5F-6383-42A4-B27F-D6172EFF7146"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenguinPay/Data Layer/ViewModels/SendMoneyViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "doCalculation(inputAmount:currencyAbbreviation:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "564CEB5F-6383-42A4-B27F-D6172EFF7146 - 74da60bdd35c0d2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenguinPay.SendMoneyViewModel.doCalculation(inputAmount: Swift.String, currencyAbbreviation: Swift.String) -&gt; ()"
+                  moduleName = "PenguinPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheearzahmed/Desktop/PenguinPay/PenguinPay/Data%20Layer/ViewModels/SendMoneyViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "1244">
+               </Location>
+               <Location
+                  uuid = "564CEB5F-6383-42A4-B27F-D6172EFF7146 - 74da60bdd35c0d2e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenguinPay.SendMoneyViewModel.doCalculation(inputAmount: Swift.String, currencyAbbreviation: Swift.String) -&gt; ()"
+                  moduleName = "PenguinPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sheearzahmed/Desktop/PenguinPay/PenguinPay/Data%20Layer/ViewModels/SendMoneyViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "1304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BEFD3FA7-A362-4B46-9262-4128C713F9F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenguinPay/Views/Cells/CountryTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "setData(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35B40494-7456-49C5-B3DA-1B5060BA7A1E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenguinPay/Data Layer/RequestManager/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "createURLComponents()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9421B3C8-01B9-412A-9EE1-3189BDFEA671"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenguinPay/Data Layer/RequestManager/RequestManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "createURLRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

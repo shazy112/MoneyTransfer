@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bx5-4B-HbC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PenguinPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Penguin" translatesAutoresizingMaskIntoConstraints="NO" id="mdC-AU-2ap">
+                                <rect key="frame" x="62" y="153.5" width="290" height="358"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We send your money across the world!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVI-YC-NFY">
+                                <rect key="frame" x="16" y="519" width="382" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <color key="textColor" name="SecondaryColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONC-Pl-KuK" customClass="PrimaryButton" customModule="PenguinPay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="801" width="376" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="O9P-sa-r4B"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start Sending"/>
+                                <connections>
+                                    <segue destination="qWD-ai-NFy" kind="show" id="mMZ-1b-kaf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ONC-Pl-KuK" secondAttribute="trailing" constant="22" id="5VP-S5-0la"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ONC-Pl-KuK" secondAttribute="bottom" constant="16" id="5wS-BP-wV4"/>
+                            <constraint firstItem="mdC-AU-2ap" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7QJ-k9-8RD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yVI-YC-NFY" secondAttribute="trailing" constant="16" id="7V0-p2-9Jp"/>
+                            <constraint firstItem="mdC-AU-2ap" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="7Zx-Uw-RwV"/>
+                            <constraint firstItem="yVI-YC-NFY" firstAttribute="top" secondItem="mdC-AU-2ap" secondAttribute="bottom" constant="7.5" id="7yG-D4-DWe"/>
+                            <constraint firstItem="yVI-YC-NFY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8bZ-fv-ga3"/>
+                            <constraint firstItem="mdC-AU-2ap" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.7" id="I0z-NQ-Hbj"/>
+                            <constraint firstItem="ONC-Pl-KuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="i9t-8W-7z2"/>
+                            <constraint firstItem="mdC-AU-2ap" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="jmo-pF-G1g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MUc-mK-AEo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="-684"/>
+        </scene>
+        <!--Send Money View Controller-->
+        <scene sceneID="YjD-ns-Yem">
+            <objects>
+                <viewController id="qWD-ai-NFy" customClass="SendMoneyViewController" customModule="PenguinPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kSx-bT-Dy9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78E-eT-hhF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="728"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ed-FM-VRr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="728"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8Ed-FM-VRr" firstAttribute="leading" secondItem="78E-eT-hhF" secondAttribute="leading" id="83x-gb-csf"/>
+                                    <constraint firstItem="8Ed-FM-VRr" firstAttribute="width" secondItem="78E-eT-hhF" secondAttribute="width" id="Mub-FH-C0m"/>
+                                    <constraint firstItem="8Ed-FM-VRr" firstAttribute="top" secondItem="78E-eT-hhF" secondAttribute="top" id="RF4-UH-YEA"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ed-FM-VRr" secondAttribute="trailing" id="eaC-RS-wYF"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Ed-FM-VRr" secondAttribute="bottom" constant="8" id="gJn-qN-90u"/>
+                                    <constraint firstItem="8Ed-FM-VRr" firstAttribute="height" secondItem="78E-eT-hhF" secondAttribute="height" priority="250" id="tqM-FL-K6m"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CTa-mV-IWI"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="xbb-Ub-xI8"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-Xx-hiO" customClass="PrimaryButton" customModule="PenguinPay" customModuleProvider="target">
+                                <rect key="frame" x="22" y="801" width="370" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="yY8-U7-dNG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendMoneyTapped:" destination="qWD-ai-NFy" eventType="touchUpInside" id="F0P-Ld-PVi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bkg-UY-Oed"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="78E-eT-hhF" firstAttribute="trailing" secondItem="bkg-UY-Oed" secondAttribute="trailing" id="UbH-oM-QBI"/>
+                            <constraint firstItem="78E-eT-hhF" firstAttribute="leading" secondItem="bkg-UY-Oed" secondAttribute="leading" id="btF-W1-8CX"/>
+                            <constraint firstItem="gZz-Xx-hiO" firstAttribute="top" secondItem="78E-eT-hhF" secondAttribute="bottom" constant="73" id="dmi-z9-OpB"/>
+                            <constraint firstItem="78E-eT-hhF" firstAttribute="top" secondItem="kSx-bT-Dy9" secondAttribute="top" id="meR-WG-RMA"/>
+                            <constraint firstItem="gZz-Xx-hiO" firstAttribute="bottom" secondItem="bkg-UY-Oed" secondAttribute="bottom" constant="-16" id="ncb-lc-vrt"/>
+                            <constraint firstItem="gZz-Xx-hiO" firstAttribute="leading" secondItem="bkg-UY-Oed" secondAttribute="leading" constant="22" id="qXS-lI-cie"/>
+                            <constraint firstItem="bkg-UY-Oed" firstAttribute="trailing" secondItem="gZz-Xx-hiO" secondAttribute="trailing" constant="22" id="rZq-p1-aJA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IxF-X3-QdZ"/>
+                    <connections>
+                        <outlet property="contentView" destination="8Ed-FM-VRr" id="wDj-Pn-2sC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPw-NN-vdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620" y="-684"/>
+        </scene>
+        <!--Countries View Controller-->
+        <scene sceneID="ifl-9g-He9">
+            <objects>
+                <viewController storyboardIdentifier="CountriesViewController" id="Ery-O6-g1y" customClass="CountriesViewController" customModule="PenguinPay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2q-1A-zVo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JXg-Yk-f3p">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countriesTableViewCell" id="XKA-SU-suQ" customClass="CountryTableViewCell" customModule="PenguinPay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XKA-SU-suQ" id="jJa-0Y-PAJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ABt-Ll-Uyh">
+                                                    <rect key="frame" x="16" y="9.5" width="35" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Zm0-bd-c9P"/>
+                                                        <constraint firstAttribute="width" constant="35" id="b3P-4d-aGT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIA-Mk-Asc">
+                                                    <rect key="frame" x="67" y="11.5" width="274" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jG-fy-9TZ">
+                                                    <rect key="frame" x="357" y="11.5" width="45" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="45" id="P4t-28-cnt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ABt-Ll-Uyh" firstAttribute="centerY" secondItem="jJa-0Y-PAJ" secondAttribute="centerY" id="AZF-FA-RZt"/>
+                                                <constraint firstItem="7jG-fy-9TZ" firstAttribute="trailing" secondItem="jJa-0Y-PAJ" secondAttribute="trailingMargin" constant="8" id="DLc-RX-P8X"/>
+                                                <constraint firstItem="YIA-Mk-Asc" firstAttribute="centerY" secondItem="ABt-Ll-Uyh" secondAttribute="centerY" id="MMz-zi-KIP"/>
+                                                <constraint firstItem="7jG-fy-9TZ" firstAttribute="leading" secondItem="YIA-Mk-Asc" secondAttribute="trailing" constant="16" id="Zus-m7-5O1"/>
+                                                <constraint firstItem="7jG-fy-9TZ" firstAttribute="centerY" secondItem="jJa-0Y-PAJ" secondAttribute="centerY" id="cyB-6s-a5o"/>
+                                                <constraint firstItem="YIA-Mk-Asc" firstAttribute="leading" secondItem="ABt-Ll-Uyh" secondAttribute="trailing" constant="16" id="e9q-K3-H8e"/>
+                                                <constraint firstItem="ABt-Ll-Uyh" firstAttribute="leading" secondItem="jJa-0Y-PAJ" secondAttribute="leading" constant="16" id="lT3-AJ-v2R"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryCodeLabel" destination="7jG-fy-9TZ" id="MFI-ag-auZ"/>
+                                            <outlet property="countryImageView" destination="ABt-Ll-Uyh" id="CVB-1X-9Tk"/>
+                                            <outlet property="countryLabel" destination="YIA-Mk-Asc" id="LoJ-6v-eof"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mt1-gf-3l3">
+                                <rect key="frame" x="374" y="52" width="24" height="24"/>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="close:" destination="Ery-O6-g1y" eventType="touchUpInside" id="vXm-h7-yF6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jzr-6L-4cw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JXg-Yk-f3p" firstAttribute="leading" secondItem="Jzr-6L-4cw" secondAttribute="leading" id="Eud-X9-jDe"/>
+                            <constraint firstItem="Jzr-6L-4cw" firstAttribute="trailing" secondItem="Mt1-gf-3l3" secondAttribute="trailing" constant="16" id="Teg-cN-JK6"/>
+                            <constraint firstItem="Mt1-gf-3l3" firstAttribute="top" secondItem="Jzr-6L-4cw" secondAttribute="top" constant="8" id="uDb-wM-gAh"/>
+                            <constraint firstItem="Jzr-6L-4cw" firstAttribute="bottom" secondItem="JXg-Yk-f3p" secondAttribute="bottom" id="yYY-Hb-RGx"/>
+                            <constraint firstItem="JXg-Yk-f3p" firstAttribute="trailing" secondItem="Jzr-6L-4cw" secondAttribute="trailing" id="zRg-hW-mgc"/>
+                            <constraint firstItem="JXg-Yk-f3p" firstAttribute="top" secondItem="Mt1-gf-3l3" secondAttribute="bottom" constant="16" id="zwx-XX-WwQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JXg-Yk-f3p" id="iik-td-alk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZY-hy-wmR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310.144927536232" y="-680.35714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p13-vb-izk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bx5-4B-HbC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ct-jc-r2d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="PrimaryColor"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <textAttributes key="titleTextAttributes"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mSZ-cm-CuW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8P-Sa-yC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-725" y="-684"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Penguin" width="551" height="453"/>
+        <image name="close" width="24" height="24"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40392156862745099" green="0.396078431372549" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryColor">
+            <color red="0.17647058823529413" green="0.17647058823529413" blue="0.17647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

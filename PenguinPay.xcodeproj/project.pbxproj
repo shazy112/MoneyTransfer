@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9324802428680025007166E4 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 9324802328680025007166E4 /* JGProgressHUD */; };
+		9324802728697AC5007166E4 /* SendMoneyMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324802628697AC5007166E4 /* SendMoneyMock.swift */; };
+		9324802A28697C7B007166E4 /* MoneyTransfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324802928697C7B007166E4 /* MoneyTransfers.swift */; };
+		9324802C28697C9F007166E4 /* SendMoneyRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324802B28697C9F007166E4 /* SendMoneyRequestModel.swift */; };
+		9324802E28697CC3007166E4 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324802D28697CC3007166E4 /* Extension+UIViewController.swift */; };
+		9324803028697D19007166E4 /* MoneyTransferError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324802F28697D19007166E4 /* MoneyTransferError.swift */; };
+		9324803228697D3D007166E4 /* CurrenciesCallBacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9324803128697D3D007166E4 /* CurrenciesCallBacks.swift */; };
+		93A3491028616B4E002470D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3490F28616B4E002470D9 /* AppDelegate.swift */; };
+		93A3491228616B4E002470D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3491128616B4E002470D9 /* SceneDelegate.swift */; };
+		93A3491428616B4E002470D9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3491328616B4E002470D9 /* HomeViewController.swift */; };
+		93A3491728616B4E002470D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A3491528616B4E002470D9 /* Main.storyboard */; };
+		93A3491928616B52002470D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A3491828616B52002470D9 /* Assets.xcassets */; };
+		93A3491C28616B52002470D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A3491A28616B52002470D9 /* LaunchScreen.storyboard */; };
+		93A3492728616B52002470D9 /* PenguinPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3492628616B52002470D9 /* PenguinPayTests.swift */; };
+		93A3493128616B52002470D9 /* PenguinPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3493028616B52002470D9 /* PenguinPayUITests.swift */; };
+		93A3493328616B52002470D9 /* PenguinPayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3493228616B52002470D9 /* PenguinPayUITestsLaunchTests.swift */; };
+		93A3494228619087002470D9 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3494128619087002470D9 /* PrimaryButton.swift */; };
+		93A349452861942A002470D9 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349442861942A002470D9 /* Extension+UIView.swift */; };
+		93A3494828619D06002470D9 /* SendMoneyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93A3494728619D05002470D9 /* SendMoneyView.xib */; };
+		93A3494B28622E6E002470D9 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3494A28622E6D002470D9 /* SendMoneyViewController.swift */; };
+		93A3494D286235E0002470D9 /* SendMoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3494C286235E0002470D9 /* SendMoneyView.swift */; };
+		93A3495128625EA5002470D9 /* CountryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3495028625EA4002470D9 /* CountryInformation.swift */; };
+		93A3495328626AC7002470D9 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3495228626AC7002470D9 /* LocalDataManager.swift */; };
+		93A3495B28629307002470D9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3495A28629305002470D9 /* APIError.swift */; };
+		93A349612862E7C1002470D9 /* Extension+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349602862E7C1002470D9 /* Extension+UINavigationController.swift */; };
+		93A349642862E8CB002470D9 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349632862E8CB002470D9 /* CountryTableViewCell.swift */; };
+		93A349662862EA05002470D9 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349652862EA05002470D9 /* CountriesViewController.swift */; };
+		93A349692862EB6A002470D9 /* CountriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349682862EB69002470D9 /* CountriesRepository.swift */; };
+		93A3496C2862F638002470D9 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3496B2862F637002470D9 /* CountriesViewModel.swift */; };
+		93A3496D28630138002470D9 /* CountryInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 93A34957286286E5002470D9 /* CountryInfo.json */; };
+		93A3496F2863838A002470D9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3496E2863838A002470D9 /* APIManager.swift */; };
+		93A3497128638FC8002470D9 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3497028638FC8002470D9 /* RequestManager.swift */; };
+		93A349772863F706002470D9 /* CurrencyExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349762863F706002470D9 /* CurrencyExchangeRateRequest.swift */; };
+		93A3497A2863F752002470D9 /* NetworkRequestEssentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349792863F752002470D9 /* NetworkRequestEssentials.swift */; };
+		93A3497D2863F92E002470D9 /* CurrencyExchangeRateRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3497C2863F92E002470D9 /* CurrencyExchangeRateRepository.swift */; };
+		93A3497F2863F9D4002470D9 /* CurrencyExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A3497E2863F9D4002470D9 /* CurrencyExchangeRate.swift */; };
+		93A349812864069B002470D9 /* SendMoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A349802864069A002470D9 /* SendMoneyViewModel.swift */; };
+		93A34983286554C5002470D9 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A34982286554C4002470D9 /* Extension+String.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93A3492328616B52002470D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93A3490428616B4D002470D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93A3490B28616B4E002470D9;
+			remoteInfo = PenguinPay;
+		};
+		93A3492D28616B52002470D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93A3490428616B4D002470D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93A3490B28616B4E002470D9;
+			remoteInfo = PenguinPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9324802628697AC5007166E4 /* SendMoneyMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyMock.swift; sourceTree = "<group>"; };
+		9324802928697C7B007166E4 /* MoneyTransfers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTransfers.swift; sourceTree = "<group>"; };
+		9324802B28697C9F007166E4 /* SendMoneyRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyRequestModel.swift; sourceTree = "<group>"; };
+		9324802D28697CC3007166E4 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		9324802F28697D19007166E4 /* MoneyTransferError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTransferError.swift; sourceTree = "<group>"; };
+		9324803128697D3D007166E4 /* CurrenciesCallBacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesCallBacks.swift; sourceTree = "<group>"; };
+		93A3490C28616B4E002470D9 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A3490F28616B4E002470D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		93A3491128616B4E002470D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		93A3491328616B4E002470D9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		93A3491628616B4E002470D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93A3491828616B52002470D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		93A3491B28616B52002470D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		93A3491D28616B52002470D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A3492228616B52002470D9 /* PenguinPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A3492628616B52002470D9 /* PenguinPayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinPayTests.swift; sourceTree = "<group>"; };
+		93A3492C28616B52002470D9 /* PenguinPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenguinPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A3493028616B52002470D9 /* PenguinPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinPayUITests.swift; sourceTree = "<group>"; };
+		93A3493228616B52002470D9 /* PenguinPayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinPayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93A3494128619087002470D9 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		93A349442861942A002470D9 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		93A3494728619D05002470D9 /* SendMoneyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendMoneyView.xib; sourceTree = "<group>"; };
+		93A3494A28622E6D002470D9 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
+		93A3494C286235E0002470D9 /* SendMoneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyView.swift; sourceTree = "<group>"; };
+		93A3495028625EA4002470D9 /* CountryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInformation.swift; sourceTree = "<group>"; };
+		93A3495228626AC7002470D9 /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		93A34957286286E5002470D9 /* CountryInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CountryInfo.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		93A3495A28629305002470D9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		93A349602862E7C1002470D9 /* Extension+UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UINavigationController.swift"; sourceTree = "<group>"; };
+		93A349632862E8CB002470D9 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		93A349652862EA05002470D9 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		93A349682862EB69002470D9 /* CountriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesRepository.swift; sourceTree = "<group>"; };
+		93A3496B2862F637002470D9 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		93A3496E2863838A002470D9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		93A3497028638FC8002470D9 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		93A349762863F706002470D9 /* CurrencyExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRateRequest.swift; sourceTree = "<group>"; };
+		93A349792863F752002470D9 /* NetworkRequestEssentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestEssentials.swift; sourceTree = "<group>"; };
+		93A3497C2863F92E002470D9 /* CurrencyExchangeRateRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRateRepository.swift; sourceTree = "<group>"; };
+		93A3497E2863F9D4002470D9 /* CurrencyExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeRate.swift; sourceTree = "<group>"; };
+		93A349802864069A002470D9 /* SendMoneyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMoneyViewModel.swift; sourceTree = "<group>"; };
+		93A34982286554C4002470D9 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		93C330602869FB9A00012891 /* Read Me.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Read Me.md"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93A3490928616B4E002470D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9324802428680025007166E4 /* JGProgressHUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A3491F28616B52002470D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A3492928616B52002470D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9324802528697AA2007166E4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9324802628697AC5007166E4 /* SendMoneyMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9324802828697C6C007166E4 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				9324802928697C7B007166E4 /* MoneyTransfers.swift */,
+				9324802F28697D19007166E4 /* MoneyTransferError.swift */,
+				9324803128697D3D007166E4 /* CurrenciesCallBacks.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		9324803328697E80007166E4 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				93A3490F28616B4E002470D9 /* AppDelegate.swift */,
+				93A3491128616B4E002470D9 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		9324803428697F2A007166E4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				93A3491528616B4E002470D9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9324803528697F5A007166E4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				93A3491828616B52002470D9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9324803628697F69007166E4 /* LauncScreen */ = {
+			isa = PBXGroup;
+			children = (
+				93A3491A28616B52002470D9 /* LaunchScreen.storyboard */,
+			);
+			path = LauncScreen;
+			sourceTree = "<group>";
+		};
+		93A3490328616B4D002470D9 = {
+			isa = PBXGroup;
+			children = (
+				93A3490E28616B4E002470D9 /* PenguinPay */,
+				93A3492528616B52002470D9 /* PenguinPayTests */,
+				93A3492F28616B52002470D9 /* PenguinPayUITests */,
+				93A3490D28616B4E002470D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93A3490D28616B4E002470D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93A3490C28616B4E002470D9 /* PenguinPay.app */,
+				93A3492228616B52002470D9 /* PenguinPayTests.xctest */,
+				93A3492C28616B52002470D9 /* PenguinPayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93A3490E28616B4E002470D9 /* PenguinPay */ = {
+			isa = PBXGroup;
+			children = (
+				93C3305F2869FB7000012891 /* ReadMe */,
+				9324803428697F2A007166E4 /* Storyboards */,
+				9324803528697F5A007166E4 /* Assets */,
+				9324803628697F69007166E4 /* LauncScreen */,
+				93A3494928622DFC002470D9 /* ViewControllers */,
+				93A3494628619C99002470D9 /* Views */,
+				93A3494E28625E59002470D9 /* Data Layer */,
+				9324803328697E80007166E4 /* Delegates */,
+				93A34943286192ED002470D9 /* Extensions */,
+				93A3494028618DCD002470D9 /* Components */,
+				93A3491D28616B52002470D9 /* Info.plist */,
+			);
+			path = PenguinPay;
+			sourceTree = "<group>";
+		};
+		93A3492528616B52002470D9 /* PenguinPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				9324802528697AA2007166E4 /* Mocks */,
+				93A3492628616B52002470D9 /* PenguinPayTests.swift */,
+			);
+			path = PenguinPayTests;
+			sourceTree = "<group>";
+		};
+		93A3492F28616B52002470D9 /* PenguinPayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				93A3493028616B52002470D9 /* PenguinPayUITests.swift */,
+				93A3493228616B52002470D9 /* PenguinPayUITestsLaunchTests.swift */,
+			);
+			path = PenguinPayUITests;
+			sourceTree = "<group>";
+		};
+		93A3494028618DCD002470D9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93A3494128619087002470D9 /* PrimaryButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		93A34943286192ED002470D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				93A349442861942A002470D9 /* Extension+UIView.swift */,
+				93A349602862E7C1002470D9 /* Extension+UINavigationController.swift */,
+				93A34982286554C4002470D9 /* Extension+String.swift */,
+				9324802D28697CC3007166E4 /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93A3494628619C99002470D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93A349622862E8A6002470D9 /* Cells */,
+				93A3494728619D05002470D9 /* SendMoneyView.xib */,
+				93A3494C286235E0002470D9 /* SendMoneyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93A3494928622DFC002470D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93A3491328616B4E002470D9 /* HomeViewController.swift */,
+				93A3494A28622E6D002470D9 /* SendMoneyViewController.swift */,
+				93A349652862EA05002470D9 /* CountriesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		93A3494E28625E59002470D9 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				9324802828697C6C007166E4 /* Enums */,
+				93A3497B2863F77B002470D9 /* APIManager */,
+				93A349542862856D002470D9 /* LocalDataManager */,
+				93A34959286292CD002470D9 /* APIErrors */,
+				93A349742863F6C1002470D9 /* RequestManager */,
+				93A349582862875B002470D9 /* Models */,
+				93A349782863F720002470D9 /* NetworkEssentials */,
+				93A349752863F6C9002470D9 /* CurrencyExchangeRateRequest */,
+				93A349672862EB44002470D9 /* Repositories */,
+				93A3496A2862F5E5002470D9 /* ViewModels */,
+				93A3495528628598002470D9 /* JSON */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		93A349542862856D002470D9 /* LocalDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				93A3495228626AC7002470D9 /* LocalDataManager.swift */,
+			);
+			path = LocalDataManager;
+			sourceTree = "<group>";
+		};
+		93A3495528628598002470D9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				93A34957286286E5002470D9 /* CountryInfo.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		93A349582862875B002470D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9324802B28697C9F007166E4 /* SendMoneyRequestModel.swift */,
+				93A3495028625EA4002470D9 /* CountryInformation.swift */,
+				93A3497E2863F9D4002470D9 /* CurrencyExchangeRate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93A34959286292CD002470D9 /* APIErrors */ = {
+			isa = PBXGroup;
+			children = (
+				93A3495A28629305002470D9 /* APIError.swift */,
+			);
+			path = APIErrors;
+			sourceTree = "<group>";
+		};
+		93A349622862E8A6002470D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				93A349632862E8CB002470D9 /* CountryTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		93A349672862EB44002470D9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				93A349682862EB69002470D9 /* CountriesRepository.swift */,
+				93A3497C2863F92E002470D9 /* CurrencyExchangeRateRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		93A3496A2862F5E5002470D9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				93A3496B2862F637002470D9 /* CountriesViewModel.swift */,
+				93A349802864069A002470D9 /* SendMoneyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		93A349742863F6C1002470D9 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				93A3497028638FC8002470D9 /* RequestManager.swift */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		93A349752863F6C9002470D9 /* CurrencyExchangeRateRequest */ = {
+			isa = PBXGroup;
+			children = (
+				93A349762863F706002470D9 /* CurrencyExchangeRateRequest.swift */,
+			);
+			path = CurrencyExchangeRateRequest;
+			sourceTree = "<group>";
+		};
+		93A349782863F720002470D9 /* NetworkEssentials */ = {
+			isa = PBXGroup;
+			children = (
+				93A349792863F752002470D9 /* NetworkRequestEssentials.swift */,
+			);
+			path = NetworkEssentials;
+			sourceTree = "<group>";
+		};
+		93A3497B2863F77B002470D9 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				93A3496E2863838A002470D9 /* APIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		93C3305F2869FB7000012891 /* ReadMe */ = {
+			isa = PBXGroup;
+			children = (
+				93C330602869FB9A00012891 /* Read Me.md */,
+			);
+			path = ReadMe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93A3490B28616B4E002470D9 /* PenguinPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A3493628616B52002470D9 /* Build configuration list for PBXNativeTarget "PenguinPay" */;
+			buildPhases = (
+				93A3490828616B4E002470D9 /* Sources */,
+				93A3490928616B4E002470D9 /* Frameworks */,
+				93A3490A28616B4E002470D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenguinPay;
+			packageProductDependencies = (
+				9324802328680025007166E4 /* JGProgressHUD */,
+			);
+			productName = PenguinPay;
+			productReference = 93A3490C28616B4E002470D9 /* PenguinPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93A3492128616B52002470D9 /* PenguinPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A3493928616B52002470D9 /* Build configuration list for PBXNativeTarget "PenguinPayTests" */;
+			buildPhases = (
+				93A3491E28616B52002470D9 /* Sources */,
+				93A3491F28616B52002470D9 /* Frameworks */,
+				93A3492028616B52002470D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93A3492428616B52002470D9 /* PBXTargetDependency */,
+			);
+			name = PenguinPayTests;
+			productName = PenguinPayTests;
+			productReference = 93A3492228616B52002470D9 /* PenguinPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93A3492B28616B52002470D9 /* PenguinPayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A3493C28616B52002470D9 /* Build configuration list for PBXNativeTarget "PenguinPayUITests" */;
+			buildPhases = (
+				93A3492828616B52002470D9 /* Sources */,
+				93A3492928616B52002470D9 /* Frameworks */,
+				93A3492A28616B52002470D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93A3492E28616B52002470D9 /* PBXTargetDependency */,
+			);
+			name = PenguinPayUITests;
+			productName = PenguinPayUITests;
+			productReference = 93A3492C28616B52002470D9 /* PenguinPayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93A3490428616B4D002470D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					93A3490B28616B4E002470D9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					93A3492128616B52002470D9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 93A3490B28616B4E002470D9;
+					};
+					93A3492B28616B52002470D9 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 93A3490B28616B4E002470D9;
+					};
+				};
+			};
+			buildConfigurationList = 93A3490728616B4D002470D9 /* Build configuration list for PBXProject "PenguinPay" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93A3490328616B4D002470D9;
+			packageReferences = (
+				9324802228680025007166E4 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+			);
+			productRefGroup = 93A3490D28616B4E002470D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93A3490B28616B4E002470D9 /* PenguinPay */,
+				93A3492128616B52002470D9 /* PenguinPayTests */,
+				93A3492B28616B52002470D9 /* PenguinPayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93A3490A28616B4E002470D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A3491C28616B52002470D9 /* LaunchScreen.storyboard in Resources */,
+				93A3491928616B52002470D9 /* Assets.xcassets in Resources */,
+				93A3496D28630138002470D9 /* CountryInfo.json in Resources */,
+				93A3494828619D06002470D9 /* SendMoneyView.xib in Resources */,
+				93A3491728616B4E002470D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A3492028616B52002470D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A3492A28616B52002470D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93A3490828616B4E002470D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A3491428616B4E002470D9 /* HomeViewController.swift in Sources */,
+				9324803028697D19007166E4 /* MoneyTransferError.swift in Sources */,
+				93A349692862EB6A002470D9 /* CountriesRepository.swift in Sources */,
+				9324803228697D3D007166E4 /* CurrenciesCallBacks.swift in Sources */,
+				9324802C28697C9F007166E4 /* SendMoneyRequestModel.swift in Sources */,
+				93A349662862EA05002470D9 /* CountriesViewController.swift in Sources */,
+				93A3497F2863F9D4002470D9 /* CurrencyExchangeRate.swift in Sources */,
+				93A349812864069B002470D9 /* SendMoneyViewModel.swift in Sources */,
+				93A349452861942A002470D9 /* Extension+UIView.swift in Sources */,
+				93A3495328626AC7002470D9 /* LocalDataManager.swift in Sources */,
+				9324802E28697CC3007166E4 /* Extension+UIViewController.swift in Sources */,
+				93A3497D2863F92E002470D9 /* CurrencyExchangeRateRepository.swift in Sources */,
+				93A3495B28629307002470D9 /* APIError.swift in Sources */,
+				93A3497128638FC8002470D9 /* RequestManager.swift in Sources */,
+				93A3491028616B4E002470D9 /* AppDelegate.swift in Sources */,
+				93A349772863F706002470D9 /* CurrencyExchangeRateRequest.swift in Sources */,
+				93A3494B28622E6E002470D9 /* SendMoneyViewController.swift in Sources */,
+				93A3494D286235E0002470D9 /* SendMoneyView.swift in Sources */,
+				93A349642862E8CB002470D9 /* CountryTableViewCell.swift in Sources */,
+				9324802A28697C7B007166E4 /* MoneyTransfers.swift in Sources */,
+				93A34983286554C5002470D9 /* Extension+String.swift in Sources */,
+				93A3496C2862F638002470D9 /* CountriesViewModel.swift in Sources */,
+				93A3496F2863838A002470D9 /* APIManager.swift in Sources */,
+				93A3495128625EA5002470D9 /* CountryInformation.swift in Sources */,
+				93A3494228619087002470D9 /* PrimaryButton.swift in Sources */,
+				93A3491228616B4E002470D9 /* SceneDelegate.swift in Sources */,
+				93A3497A2863F752002470D9 /* NetworkRequestEssentials.swift in Sources */,
+				93A349612862E7C1002470D9 /* Extension+UINavigationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A3491E28616B52002470D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9324802728697AC5007166E4 /* SendMoneyMock.swift in Sources */,
+				93A3492728616B52002470D9 /* PenguinPayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93A3492828616B52002470D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93A3493328616B52002470D9 /* PenguinPayUITestsLaunchTests.swift in Sources */,
+				93A3493128616B52002470D9 /* PenguinPayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93A3492428616B52002470D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93A3490B28616B4E002470D9 /* PenguinPay */;
+			targetProxy = 93A3492328616B52002470D9 /* PBXContainerItemProxy */;
+		};
+		93A3492E28616B52002470D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93A3490B28616B4E002470D9 /* PenguinPay */;
+			targetProxy = 93A3492D28616B52002470D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93A3491528616B4E002470D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93A3491628616B4E002470D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		93A3491A28616B52002470D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93A3491B28616B52002470D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93A3493428616B52002470D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		93A3493528616B52002470D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		93A3493728616B52002470D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PenguinPay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PenguinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		93A3493828616B52002470D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PenguinPay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PenguinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		93A3493A28616B52002470D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PenguinPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenguinPay.app/PenguinPay";
+			};
+			name = Debug;
+		};
+		93A3493B28616B52002470D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PenguinPayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenguinPay.app/PenguinPay";
+			};
+			name = Release;
+		};
+		93A3493D28616B52002470D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PenguinPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PenguinPay;
+			};
+			name = Debug;
+		};
+		93A3493E28616B52002470D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.PenguinPayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PenguinPay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93A3490728616B4D002470D9 /* Build configuration list for PBXProject "PenguinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93A3493428616B52002470D9 /* Debug */,
+				93A3493528616B52002470D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93A3493628616B52002470D9 /* Build configuration list for PBXNativeTarget "PenguinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93A3493728616B52002470D9 /* Debug */,
+				93A3493828616B52002470D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93A3493928616B52002470D9 /* Build configuration list for PBXNativeTarget "PenguinPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93A3493A28616B52002470D9 /* Debug */,
+				93A3493B28616B52002470D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93A3493C28616B52002470D9 /* Build configuration list for PBXNativeTarget "PenguinPayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93A3493D28616B52002470D9 /* Debug */,
+				93A3493E28616B52002470D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9324802228680025007166E4 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9324802328680025007166E4 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9324802228680025007166E4 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 93A3490428616B4D002470D9 /* Project object */;
+}
